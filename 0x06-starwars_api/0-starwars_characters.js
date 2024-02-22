@@ -7,6 +7,7 @@ const filmEndPoint = 'https://swapi-api.hbtn.io/api/films/' + movieId;
 let people = [];
 const names = [];
 
+
 const requestCharacters = async () => {
     await new Promise(resolve => request(filmEndPoint, (err, res, body) => {
         if (err || res.statusCode !== 200) {
